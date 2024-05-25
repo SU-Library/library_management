@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "research_paper_section",
   "title",
   "authors",
   "publication_date",
@@ -82,11 +83,16 @@
    "fieldtype": "Link",
    "label": "E Research File",
    "options": "E Book"
+  },
+  {
+   "fieldname": "research_paper_section",
+   "fieldtype": "Section Break",
+   "label": "Research Paper"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-05 22:29:31.525946",
+ "modified": "2024-05-06 13:07:08.438591",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Research Paper",

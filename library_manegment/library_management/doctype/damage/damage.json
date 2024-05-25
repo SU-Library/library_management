@@ -1,10 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{item_borrowing}",
  "creation": "2024-05-05 22:58:39.573269",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "damage_section",
   "item_borrowing",
   "description_of_the_damage",
   "fine_amount",
@@ -32,14 +34,20 @@
    "fieldtype": "Select",
    "label": "Fine Status",
    "options": "unpaid\npaid"
+  },
+  {
+   "fieldname": "damage_section",
+   "fieldtype": "Section Break",
+   "label": "Damage"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-05 23:02:51.227058",
+ "modified": "2024-05-06 12:59:26.994997",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Damage",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

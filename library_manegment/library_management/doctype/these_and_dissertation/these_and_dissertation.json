@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "these_and_dissertation_section",
   "title",
   "authors",
   "institution",
@@ -78,11 +79,16 @@
    "fieldtype": "Link",
    "label": "E These/Dissertation File",
    "options": "E Book"
+  },
+  {
+   "fieldname": "these_and_dissertation_section",
+   "fieldtype": "Section Break",
+   "label": "These and Dissertation"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-05 22:32:44.514861",
+ "modified": "2024-05-06 13:06:32.789052",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "These and Dissertation",

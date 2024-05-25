@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{book_copy}",
  "creation": "2024-05-01 20:46:16.941927",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -17,7 +18,7 @@
   {
    "fieldname": "item_borrowing_section",
    "fieldtype": "Section Break",
-   "label": "Item Borrowing"
+   "label": "Borrowing"
   },
   {
    "fieldname": "date_of_borrowing",
@@ -55,10 +56,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-05 22:53:10.049678",
+ "modified": "2024-05-08 14:01:02.694419",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Item Borrowing",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

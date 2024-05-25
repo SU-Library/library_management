@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{item_borrowing}",
  "creation": "2024-05-01 20:53:39.496599",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -42,10 +43,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-05 22:57:33.514337",
+ "modified": "2024-05-06 13:00:05.454187",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Fine",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

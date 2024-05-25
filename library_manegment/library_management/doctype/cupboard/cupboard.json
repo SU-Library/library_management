@@ -5,21 +5,39 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "test"
+  "shelf_section",
+  "cupboard_name",
+  "cupboard_capacity",
+  "cupboard_location"
  ],
  "fields": [
   {
-   "fieldname": "test",
+   "fieldname": "shelf_section",
+   "fieldtype": "Section Break",
+   "label": "Cupboard"
+  },
+  {
+   "fieldname": "cupboard_location",
    "fieldtype": "Data",
-   "label": "test"
+   "label": "Cupboard location"
+  },
+  {
+   "fieldname": "cupboard_name",
+   "fieldtype": "Data",
+   "label": "Cupboard Name"
+  },
+  {
+   "fieldname": "cupboard_capacity",
+   "fieldtype": "Data",
+   "label": "Cupboard Capacity"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-05 23:43:18.237961",
+ "modified": "2024-05-18 20:57:56.474874",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "test",
+ "name": "Cupboard",
  "owner": "Administrator",
  "permissions": [
   {

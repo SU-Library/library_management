@@ -7,6 +7,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "graduation_project_section",
   "title",
   "authors",
   "institution",
@@ -66,11 +67,16 @@
    "fieldtype": "Link",
    "label": "E Graduation Project File",
    "options": "E Book"
+  },
+  {
+   "fieldname": "graduation_project_section",
+   "fieldtype": "Section Break",
+   "label": "Graduation Project"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-05 22:46:05.679126",
+ "modified": "2024-05-06 13:03:18.602781",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Graduation Project",
