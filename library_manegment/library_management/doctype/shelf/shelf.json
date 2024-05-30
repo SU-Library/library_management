@@ -6,21 +6,16 @@
  "engine": "InnoDB",
  "field_order": [
   "shelf_section",
-  "shelf_number",
   "shelf_name",
   "shelf_capacity",
-  "cupboard"
+  "section",
+  "shelf_current_occupancy"
  ],
  "fields": [
   {
    "fieldname": "shelf_section",
    "fieldtype": "Section Break",
    "label": "Shelf"
-  },
-  {
-   "fieldname": "shelf_number",
-   "fieldtype": "Int",
-   "label": "Shelf Number"
   },
   {
    "fieldname": "shelf_name",
@@ -33,15 +28,20 @@
    "label": "Shelf Capacity"
   },
   {
-   "fieldname": "cupboard",
+   "fieldname": "section",
    "fieldtype": "Link",
-   "label": "Cupboard",
-   "options": "Cupboard"
+   "label": "Section",
+   "options": "Library Section"
+  },
+  {
+   "fieldname": "shelf_current_occupancy",
+   "fieldtype": "Int",
+   "label": "Shelf Current Occupancy"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-18 20:57:26.862323",
+ "modified": "2024-05-30 18:57:44.197474",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Shelf",

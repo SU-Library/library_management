@@ -17,6 +17,7 @@
   "genre",
   "number_of_pages",
   "published",
+  "location",
   "electronic_settings_column",
   "e_book_file",
   "audio_book"
@@ -96,12 +97,18 @@
    "fieldname": "published",
    "fieldtype": "Check",
    "label": "Published"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Shelf"
   }
  ],
  "image_field": "book_cover",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-25 11:08:17.788212",
+ "modified": "2024-05-30 19:00:31.454368",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",

@@ -10,13 +10,14 @@
   "copy_number",
   "copy_status",
   "book",
-  "copy_code"
+  "copy_code",
+  "serial_number"
  ],
  "fields": [
   {
    "fieldname": "book_cope_section",
    "fieldtype": "Section Break",
-   "label": "Book Copy"
+   "label": "Item Copy"
   },
   {
    "fieldname": "copy_number",
@@ -39,11 +40,16 @@
    "fieldname": "copy_code",
    "fieldtype": "Barcode",
    "label": "Copy Code"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-05 22:16:05.979114",
+ "modified": "2024-05-30 20:34:07.227643",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Item Copy",

@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class StorageInventory(Document):
+class library_section(Document):
 	pass

@@ -6,38 +6,38 @@
  "engine": "InnoDB",
  "field_order": [
   "shelf_section",
-  "cupboard_name",
-  "cupboard_capacity",
-  "cupboard_location"
+  "library_section_name",
+  "library_section_location",
+  "library_section_description"
  ],
  "fields": [
   {
    "fieldname": "shelf_section",
    "fieldtype": "Section Break",
-   "label": "Cupboard"
+   "label": "Library Section"
   },
   {
-   "fieldname": "cupboard_location",
+   "fieldname": "library_section_name",
    "fieldtype": "Data",
-   "label": "Cupboard location"
+   "label": "Library Section Name"
   },
   {
-   "fieldname": "cupboard_name",
+   "fieldname": "library_section_location",
    "fieldtype": "Data",
-   "label": "Cupboard Name"
+   "label": "Library Section location"
   },
   {
-   "fieldname": "cupboard_capacity",
-   "fieldtype": "Data",
-   "label": "Cupboard Capacity"
+   "fieldname": "library_section_description",
+   "fieldtype": "Small Text",
+   "label": "Library Section Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-18 20:57:56.474874",
+ "modified": "2024-05-30 18:35:37.883804",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Cupboard",
+ "name": "Library Section",
  "owner": "Administrator",
  "permissions": [
   {

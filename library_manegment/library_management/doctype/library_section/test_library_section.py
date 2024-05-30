@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestStorageInventory(FrappeTestCase):
+class TestLibrarySection(FrappeTestCase):
 	pass
