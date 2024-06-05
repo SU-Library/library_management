@@ -7,7 +7,6 @@
  "engine": "InnoDB",
  "field_order": [
   "genre_details_section",
-  "genre_id",
   "genre_name"
  ],
  "fields": [
@@ -23,16 +22,11 @@
    "label": "Genre Name",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "genre_id",
-   "fieldtype": "Int",
-   "label": "Genre ID"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-05 18:29:52.840280",
+ "modified": "2024-05-03 14:56:18.914926",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Genre",

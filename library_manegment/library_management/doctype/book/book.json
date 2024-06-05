@@ -14,7 +14,8 @@
   "publisher",
   "isbn",
   "language",
-  "genre",
+  "category",
+  "classification",
   "number_of_pages",
   "published",
   "location",
@@ -53,12 +54,6 @@
    "fieldtype": "Link",
    "label": "Language",
    "options": "Language"
-  },
-  {
-   "fieldname": "genre",
-   "fieldtype": "Link",
-   "label": "Category",
-   "options": "Category"
   },
   {
    "fieldname": "number_of_pages",
@@ -103,12 +98,24 @@
    "fieldtype": "Link",
    "label": "Location",
    "options": "Shelf"
+  },
+  {
+   "fieldname": "classification",
+   "fieldtype": "Link",
+   "label": "Classification",
+   "options": "Classification"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category"
   }
  ],
  "image_field": "book_cover",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-05 18:59:05.725068",
+ "modified": "2024-06-05 21:21:01.496215",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",
