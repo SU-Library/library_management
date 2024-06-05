@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{item_borrowing}",
+ "creation": "2024-05-01 20:53:39.496599",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fine_section",
+  "item_borrowing",
+  "event_date",
+  "fine_amount",
+  "fine_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "fine_section",
+   "fieldtype": "Section Break",
+   "label": "Fine"
+  },
+  {
+   "fieldname": "event_date",
+   "fieldtype": "Date",
+   "label": "Event Date"
+  },
+  {
+   "fieldname": "fine_amount",
+   "fieldtype": "Int",
+   "label": "Fine Amount"
+  },
+  {
+   "fieldname": "fine_status",
+   "fieldtype": "Select",
+   "label": "Fine Status",
+   "options": "unpaid\npaid"
+  },
+  {
+   "fieldname": "item_borrowing",
+   "fieldtype": "Link",
+   "label": "Item Borrowing",
+   "options": "Item Borrowing"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-06 13:00:05.454187",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Fine",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

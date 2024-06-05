@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{book}-{copy_number}",
+ "creation": "2024-05-01 14:32:54.907591",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "book_cope_section",
+  "copy_number",
+  "copy_status",
+  "book",
+  "copy_code",
+  "serial_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "book_cope_section",
+   "fieldtype": "Section Break",
+   "label": "Item Copy"
+  },
+  {
+   "fieldname": "copy_number",
+   "fieldtype": "Data",
+   "label": "Copy Number"
+  },
+  {
+   "fieldname": "copy_status",
+   "fieldtype": "Select",
+   "label": "Copy Status",
+   "options": "Available\nBorrowed\nDamaged"
+  },
+  {
+   "fieldname": "book",
+   "fieldtype": "Link",
+   "label": "Book",
+   "options": "Book"
+  },
+  {
+   "fieldname": "copy_code",
+   "fieldtype": "Barcode",
+   "label": "Copy Code"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-30 20:34:07.227643",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Item Copy",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Staff",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

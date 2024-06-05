@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-05 23:43:05.091485",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shelf_section",
+  "library_section_name",
+  "library_section_location",
+  "library_section_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "shelf_section",
+   "fieldtype": "Section Break",
+   "label": "Library Section"
+  },
+  {
+   "fieldname": "library_section_name",
+   "fieldtype": "Data",
+   "label": "Library Section Name"
+  },
+  {
+   "fieldname": "library_section_location",
+   "fieldtype": "Data",
+   "label": "Library Section location"
+  },
+  {
+   "fieldname": "library_section_description",
+   "fieldtype": "Small Text",
+   "label": "Library Section Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-30 18:35:37.883804",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Section",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

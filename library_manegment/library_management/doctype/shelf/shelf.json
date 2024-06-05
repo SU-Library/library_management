@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-18 20:55:02.169849",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shelf_section",
+  "shelf_name",
+  "shelf_capacity",
+  "section",
+  "shelf_current_occupancy"
+ ],
+ "fields": [
+  {
+   "fieldname": "shelf_section",
+   "fieldtype": "Section Break",
+   "label": "Shelf"
+  },
+  {
+   "fieldname": "shelf_name",
+   "fieldtype": "Data",
+   "label": "Shelf Name"
+  },
+  {
+   "fieldname": "shelf_capacity",
+   "fieldtype": "Data",
+   "label": "Shelf Capacity"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Link",
+   "label": "Section",
+   "options": "Library Section"
+  },
+  {
+   "fieldname": "shelf_current_occupancy",
+   "fieldtype": "Int",
+   "label": "Shelf Current Occupancy"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-30 18:57:44.197474",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Shelf",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

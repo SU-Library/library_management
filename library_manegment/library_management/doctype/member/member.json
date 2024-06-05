@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-01 20:52:10.791959",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member_section",
+  "name1",
+  "joining_date",
+  "phone",
+  "university_number",
+  "list_of_borrowed_books",
+  "member_ratings"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_section",
+   "fieldtype": "Section Break",
+   "label": "Member"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "university_number",
+   "fieldtype": "Int",
+   "label": "University Number"
+  },
+  {
+   "fieldname": "list_of_borrowed_books",
+   "fieldtype": "Link",
+   "label": "List of Borrowed Books",
+   "options": "Item Borrowing"
+  },
+  {
+   "fieldname": "member_ratings",
+   "fieldtype": "Rating",
+   "label": "Member Ratings"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-01 22:59:10.632295",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Member",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Staff",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

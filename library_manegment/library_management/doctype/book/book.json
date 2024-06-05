@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:book_name",
+ "creation": "2024-05-03 11:43:15.514521",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book_section",
+  "book_name",
+  "book_cover",
+  "author",
+  "publisher",
+  "isbn",
+  "language",
+  "genre",
+  "number_of_pages",
+  "published",
+  "location",
+  "electronic_settings_column",
+  "e_book_file",
+  "audio_book"
+ ],
+ "fields": [
+  {
+   "fieldname": "book_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Link",
+   "label": "Author",
+   "options": "Author"
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Link",
+   "label": "Publisher",
+   "options": "Publisher"
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "label": "Language",
+   "options": "Language"
+  },
+  {
+   "fieldname": "genre",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category"
+  },
+  {
+   "fieldname": "number_of_pages",
+   "fieldtype": "Int",
+   "label": "Number of Pages"
+  },
+  {
+   "fieldname": "book_cover",
+   "fieldtype": "Attach Image",
+   "label": "Book Cover"
+  },
+  {
+   "fieldname": "electronic_settings_column",
+   "fieldtype": "Column Break",
+   "label": "Electronic Settings"
+  },
+  {
+   "fieldname": "e_book_file",
+   "fieldtype": "Link",
+   "label": "E Book",
+   "options": "E Book"
+  },
+  {
+   "fieldname": "book_section",
+   "fieldtype": "Section Break",
+   "label": "Book"
+  },
+  {
+   "fieldname": "audio_book",
+   "fieldtype": "Link",
+   "label": "Audio Book ",
+   "options": "Audio Item"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Shelf"
+  }
+ ],
+ "image_field": "book_cover",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-05 18:59:05.725068",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Book",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

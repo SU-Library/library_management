@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2024-05-05 21:58:20.239120",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "e_book_section",
+  "title",
+  "cover",
+  "possible_to_download",
+  "published",
+  "type"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "cover",
+   "fieldtype": "Attach Image",
+   "label": "Cover"
+  },
+  {
+   "default": "0",
+   "fieldname": "possible_to_download",
+   "fieldtype": "Check",
+   "label": "Possible to Download"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Book\nResearch Paper\nThese and Dissertation\nGraduation Project"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "e_book_section",
+   "fieldtype": "Section Break",
+   "label": "E Book"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-06 13:04:50.711487",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "E Book",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

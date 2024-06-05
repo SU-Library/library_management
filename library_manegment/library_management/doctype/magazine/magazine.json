@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2024-05-03 15:03:51.078054",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "magazine_section",
+  "title",
+  "magazine_cover",
+  "publisher",
+  "issn",
+  "frequency_of_publication",
+  "language",
+  "number_of_pages",
+  "electronic_settings_column",
+  "e_magazine_file",
+  "magazine_size",
+  "possible_to_download"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Link",
+   "label": "Publisher",
+   "options": "Publisher"
+  },
+  {
+   "fieldname": "issn",
+   "fieldtype": "Data",
+   "label": "ISSN"
+  },
+  {
+   "fieldname": "frequency_of_publication",
+   "fieldtype": "Select",
+   "label": "Frequency of publication",
+   "options": "English\nArabic\nFrench"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "label": "Language",
+   "options": "English\nArabic"
+  },
+  {
+   "fieldname": "number_of_pages",
+   "fieldtype": "Int",
+   "label": "Number of pages"
+  },
+  {
+   "fieldname": "magazine_cover",
+   "fieldtype": "Attach Image",
+   "label": "Magazine Cover"
+  },
+  {
+   "fieldname": "electronic_settings_column",
+   "fieldtype": "Column Break",
+   "label": "Electronic Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "possible_to_download",
+   "fieldtype": "Check",
+   "label": "Possible to Download"
+  },
+  {
+   "fieldname": "magazine_size",
+   "fieldtype": "Float",
+   "label": "Magazine Size"
+  },
+  {
+   "fieldname": "e_magazine_file",
+   "fieldtype": "Attach",
+   "label": "E Magazine File"
+  },
+  {
+   "fieldname": "magazine_section",
+   "fieldtype": "Section Break",
+   "label": "Magazine"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-03 16:23:14.784012",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Magazine",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

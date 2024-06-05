@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2024-05-03 15:39:19.782223",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "these_and_dissertation_section",
+  "title",
+  "authors",
+  "institution",
+  "year_of_completion",
+  "degree",
+  "abstract",
+  "keywords",
+  "supervisors",
+  "number_of_pages",
+  "electronic_settings_column",
+  "e_thesedissertation"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Data",
+   "label": "Authors"
+  },
+  {
+   "fieldname": "institution",
+   "fieldtype": "Data",
+   "label": "Institution",
+   "options": "Sana'a University"
+  },
+  {
+   "fieldname": "year_of_completion",
+   "fieldtype": "Date",
+   "label": "Year of Completion"
+  },
+  {
+   "fieldname": "degree",
+   "fieldtype": "Date",
+   "label": "Degree"
+  },
+  {
+   "fieldname": "keywords",
+   "fieldtype": "Data",
+   "label": "Keywords"
+  },
+  {
+   "fieldname": "supervisors",
+   "fieldtype": "Date",
+   "label": "Supervisors"
+  },
+  {
+   "fieldname": "abstract",
+   "fieldtype": "Text Editor",
+   "label": "Abstract"
+  },
+  {
+   "fieldname": "number_of_pages",
+   "fieldtype": "Data",
+   "label": "Number of Pages"
+  },
+  {
+   "fieldname": "electronic_settings_column",
+   "fieldtype": "Column Break",
+   "label": "Electronic Settings"
+  },
+  {
+   "fieldname": "e_thesedissertation",
+   "fieldtype": "Link",
+   "label": "E These/Dissertation File",
+   "options": "E Book"
+  },
+  {
+   "fieldname": "these_and_dissertation_section",
+   "fieldtype": "Section Break",
+   "label": "These and Dissertation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-06 13:06:32.789052",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "These and Dissertation",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

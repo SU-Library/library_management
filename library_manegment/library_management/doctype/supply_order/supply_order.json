@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-18 23:37:23.393656",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "supply_order_section",
+  "order_date",
+  "order_item",
+  "quantity",
+  "statues",
+  "received_date",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "supply_order_section",
+   "fieldtype": "Section Break",
+   "label": "Supply Order"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "order_item",
+   "fieldtype": "Link",
+   "label": "Order Item",
+   "options": "Storage Inventory"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "statues",
+   "fieldtype": "Select",
+   "label": "Statues",
+   "options": "Draft\nThe Order Completed\nThe Receipt Completed\nCanceled"
+  },
+  {
+   "fieldname": "received_date",
+   "fieldtype": "Date",
+   "label": "Received Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-19 00:04:06.527036",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Supply Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2024-05-03 15:29:56.971020",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "research_paper_section",
+  "title",
+  "authors",
+  "publication_date",
+  "abstract",
+  "keywords",
+  "journal",
+  "conference_name",
+  "volume",
+  "issue_number",
+  "number_of_pages",
+  "electronic_settings_column",
+  "e_research_file"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Link",
+   "label": "Authors",
+   "options": "Audio Item"
+  },
+  {
+   "fieldname": "publication_date",
+   "fieldtype": "Date",
+   "label": "Publication Date"
+  },
+  {
+   "fieldname": "journal",
+   "fieldtype": "Data",
+   "label": "Journal"
+  },
+  {
+   "fieldname": "conference_name",
+   "fieldtype": "Data",
+   "label": "Conference Name"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Data",
+   "label": "Volume "
+  },
+  {
+   "fieldname": "issue_number",
+   "fieldtype": "Int",
+   "label": "Issue Number"
+  },
+  {
+   "fieldname": "number_of_pages",
+   "fieldtype": "Int",
+   "label": "Number of Pages"
+  },
+  {
+   "fieldname": "abstract",
+   "fieldtype": "Text Editor",
+   "label": "Abstract"
+  },
+  {
+   "fieldname": "electronic_settings_column",
+   "fieldtype": "Column Break",
+   "label": "Electronic Settings"
+  },
+  {
+   "fieldname": "keywords",
+   "fieldtype": "Date",
+   "label": "Keywords"
+  },
+  {
+   "fieldname": "e_research_file",
+   "fieldtype": "Link",
+   "label": "E Research File",
+   "options": "E Book"
+  },
+  {
+   "fieldname": "research_paper_section",
+   "fieldtype": "Section Break",
+   "label": "Research Paper"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-06 13:07:08.438591",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Research Paper",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

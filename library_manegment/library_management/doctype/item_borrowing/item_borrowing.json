@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{book_copy}",
+ "creation": "2024-05-01 20:46:16.941927",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_borrowing_section",
+  "book_copy",
+  "date_of_borrowing",
+  "expected_retrieval_date",
+  "actual_retrieval_date",
+  "status",
+  "user"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_borrowing_section",
+   "fieldtype": "Section Break",
+   "label": "Borrowing"
+  },
+  {
+   "fieldname": "date_of_borrowing",
+   "fieldtype": "Date",
+   "label": "Date of Borrowing"
+  },
+  {
+   "fieldname": "expected_retrieval_date",
+   "fieldtype": "Date",
+   "label": "Expected retrieval date"
+  },
+  {
+   "fieldname": "actual_retrieval_date",
+   "fieldtype": "Date",
+   "label": "Actual retrieval date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nNot Available"
+  },
+  {
+   "fieldname": "book_copy",
+   "fieldtype": "Link",
+   "label": "Book Copy",
+   "options": "Item Copy"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "Member"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-08 14:01:02.694419",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Item Borrowing",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Staff",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
