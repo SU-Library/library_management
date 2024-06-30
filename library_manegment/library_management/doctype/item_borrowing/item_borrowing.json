@@ -45,7 +45,7 @@
    "fieldname": "book_copy",
    "fieldtype": "Link",
    "label": "Book Copy",
-   "options": "Item Copy"
+   "options": "Item Coppppy"
   },
   {
    "fieldname": "user",
@@ -56,7 +56,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-08 14:01:02.694419",
+ "modified": "2024-06-15 13:55:32.017820",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Item Borrowing",

@@ -1,55 +1,54 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{book}-{copy_number}",
- "creation": "2024-05-01 14:32:54.907591",
+ "autoname": "format:{reference_item}-{Copy}-{copy_identifier}",
+ "creation": "2024-06-20 23:50:53.086833",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "book_cope_section",
-  "copy_number",
-  "copy_status",
-  "book",
-  "copy_code",
-  "serial_number"
+  "select_doctype",
+  "reference_item",
+  "original_barcode",
+  "copy_identifier",
+  "copy_barcode"
  ],
  "fields": [
   {
-   "fieldname": "book_cope_section",
-   "fieldtype": "Section Break",
-   "label": "Item Copy"
-  },
-  {
-   "fieldname": "copy_number",
-   "fieldtype": "Data",
-   "label": "Copy Number"
-  },
-  {
-   "fieldname": "copy_status",
+   "fieldname": "select_doctype",
    "fieldtype": "Select",
-   "label": "Copy Status",
-   "options": "Available\nBorrowed\nDamaged"
+   "label": "Select DocType",
+   "options": "Book\nMagazine\nGraduation Project"
   },
   {
-   "fieldname": "book",
-   "fieldtype": "Link",
-   "label": "Book",
-   "options": "Book"
+   "fieldname": "reference_item",
+   "fieldtype": "Dynamic Link",
+   "label": "Reference Item",
+   "options": "select_doctype"
   },
   {
-   "fieldname": "copy_code",
-   "fieldtype": "Barcode",
-   "label": "Copy Code"
-  },
-  {
-   "fieldname": "serial_number",
+   "fieldname": "original_barcode",
    "fieldtype": "Data",
-   "label": "Serial Number"
+   "in_list_view": 1,
+   "label": "Original Barcode",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "copy_identifier",
+   "fieldtype": "Data",
+   "label": "Copy Identifier",
+   "read_only": 1
+  },
+  {
+   "fieldname": "copy_barcode",
+   "fieldtype": "Barcode",
+   "label": "Copy Barcode",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-30 20:34:07.227643",
+ "modified": "2024-06-30 13:46:25.951800",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Item Copy",
@@ -65,17 +64,6 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Library Staff",
    "share": 1,
    "write": 1
   }

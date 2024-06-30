@@ -9,6 +9,7 @@
  "field_order": [
   "book_section",
   "book_name",
+  "barcode",
   "book_cover",
   "author",
   "publisher",
@@ -110,12 +111,19 @@
    "fieldtype": "Link",
    "label": "Category",
    "options": "Category"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Data",
+   "label": "Barcode",
+   "read_only": 1,
+   "unique": 1
   }
  ],
  "image_field": "book_cover",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-05 21:21:01.496215",
+ "modified": "2024-06-30 11:49:02.709175",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",

@@ -15,7 +15,7 @@
   {
    "fieldname": "library_staff_section",
    "fieldtype": "Section Break",
-   "label": "Library Staff"
+   "label": "Staff"
   },
   {
    "fieldname": "name1",
@@ -40,10 +40,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-01 22:27:31.523938",
+ "modified": "2024-06-14 07:09:05.604746",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Library Staff",
+ "name": "Staff",
  "owner": "Administrator",
  "permissions": [
   {

@@ -8,7 +8,8 @@
  "field_order": [
   "genre_details_section",
   "genre_id",
-  "genre_name"
+  "genre_name",
+  "description"
  ],
  "fields": [
   {
@@ -28,11 +29,16 @@
    "label": "Category Name",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-05 18:35:54.823079",
+ "modified": "2024-06-14 07:30:46.982607",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Category",
