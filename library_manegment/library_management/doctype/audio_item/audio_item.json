@@ -12,7 +12,7 @@
   "format",
   "release_date",
   "duration",
-  "genre",
+  "category",
   "possible_to_download"
  ],
  "fields": [
@@ -45,12 +45,6 @@
    "label": "Duration"
   },
   {
-   "fieldname": "genre",
-   "fieldtype": "Link",
-   "label": "Genre",
-   "options": "Genre"
-  },
-  {
    "default": "0",
    "fieldname": "possible_to_download",
    "fieldtype": "Check",
@@ -61,11 +55,17 @@
    "fieldtype": "Select",
    "label": "Format",
    "options": ".mp3"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-06 13:13:07.609474",
+ "modified": "2024-06-05 21:20:45.413134",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Audio Item",

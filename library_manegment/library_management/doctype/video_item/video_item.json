@@ -12,7 +12,7 @@
   "format",
   "release_date",
   "duration",
-  "genre",
+  "category",
   "possible_to_download"
  ],
  "fields": [
@@ -40,12 +40,6 @@
    "label": "Format"
   },
   {
-   "fieldname": "genre",
-   "fieldtype": "Link",
-   "label": "Genre",
-   "options": "Genre"
-  },
-  {
    "fieldname": "duration",
    "fieldtype": "Duration",
    "label": "Duration"
@@ -60,11 +54,17 @@
    "fieldname": "video_item_section",
    "fieldtype": "Section Break",
    "label": "Video"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-11 10:08:48.586642",
+ "modified": "2024-06-05 21:15:51.244733",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Video Item",
