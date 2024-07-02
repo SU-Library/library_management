@@ -1,20 +1,32 @@
-# Copyright (c) 2024, us and contributors
+# CopyItemright (c) 2024, us and contributors
 # For license information, please see license.txt
 
+# /your_custom_app/your_custom_app/doctype/copy_item/copy_item.py
+
 import frappe
-from frappe.model.document.utils import Document ,barcode, data
+from frappe.model.document import Document
+from frappe import _
 
 class ItemCopy(Document):
+    def validate(self):
+        self.generate_barcodes()
 
-   def generate_barcode_and_serial(ItemCopy, copy_code):
-    # Generate barcode
-    barcode_value = barcode.generate(barcode_type='Code39', value=copy_code, output='svg')
+    def generate_barcodes(self):
+        # Generate Original Barcode if Reference Item is selected
+        if self.reference_item:
+            # Fetch the document of the reference item using doctype and item identifier
+            reference_doc = frappe.get_doc(self.select_doctype, self.reference_item)
+            self.original_barcode = reference_doc.barcode
 
-    # Generate serial number
-    serial_number = data.get_next_auto_name(ItemCopy, prefix='SN-', increment=True)
+        # Generate Copy Barcode based on Original Barcode and Copy Identifier
+        if self.original_barcode and self.copy_identifier:
+            # Format the copy barcode using original barcode and copy identifier
+            self.copy_barcode = f"{self.original_barcode}-{self.copy_identifier}"
 
-    # Update the document with the generated barcode and serial number
-    doc = frappe.get_doc(ItemCopy, copy_code)
-    doc.barcode = barcode_value
-    doc.serial_number = serial_number
-    doc.save()
+    def on_update(self):
+        # Ensure barcodes are generated whenever the document is updated
+        self.generate_barcodes()
+
+# Hook into the system (setup function can be used for additional setup if required)
+def setup():
+    pass

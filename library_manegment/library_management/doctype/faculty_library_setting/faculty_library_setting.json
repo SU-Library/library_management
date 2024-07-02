@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company",
+ "creation": "2024-06-30 11:59:10.593141",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "faculty_library_setting_section",
+  "company",
+  "max_delay_period",
+  "available_books_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "unique": 1
+  },
+  {
+   "fieldname": "max_delay_period",
+   "fieldtype": "Int",
+   "label": "Max Delay Period"
+  },
+  {
+   "fieldname": "available_books_no",
+   "fieldtype": "Table",
+   "label": "Available Books Number",
+   "options": "Company Setting Available Books Number"
+  },
+  {
+   "fieldname": "faculty_library_setting_section",
+   "fieldtype": "Section Break",
+   "label": "Faculty Library Setting"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-02 12:39:58.064371",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Faculty Library Setting",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

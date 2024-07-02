@@ -1,35 +1,33 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:genre_name",
- "creation": "2024-05-03 14:54:36.227070",
+ "autoname": "field:company",
+ "creation": "2024-06-30 12:12:15.165630",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "genre_details_section",
-  "genre_name"
+  "company_section",
+  "company"
  ],
  "fields": [
   {
-   "fieldname": "genre_details_section",
-   "fieldtype": "Section Break",
-   "label": "Genre Details"
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "unique": 1
   },
   {
-   "fieldname": "genre_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Genre Name",
-   "reqd": 1,
-   "unique": 1
+   "fieldname": "company_section",
+   "fieldtype": "Section Break",
+   "label": "Company"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-03 14:56:18.914926",
+ "modified": "2024-07-01 19:55:20.685948",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Genre",
+ "name": "Company",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

@@ -51,12 +51,12 @@
    "fieldname": "user",
    "fieldtype": "Link",
    "label": "User",
-   "options": "Member"
+   "options": "Library Membership"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-08 14:01:02.694419",
+ "modified": "2024-07-02 11:27:02.925178",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Item Borrowing",
