@@ -1,43 +1,41 @@
 {
+ "_comments": "[{\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"a2ff4365aa\"}]",
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-05-05 23:43:05.091485",
+ "autoname": "field:name1",
+ "creation": "2024-07-03 11:28:07.928450",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "shelf_section",
-  "library_section_name",
-  "library_section_location",
-  "library_section_description"
+  "library_section_section",
+  "name1",
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "shelf_section",
+   "fieldname": "library_section_section",
    "fieldtype": "Section Break",
-   "label": "Library Section"
+   "label": "library section"
   },
   {
-   "fieldname": "library_section_name",
+   "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Library Section Name"
+   "label": "Name",
+   "unique": 1
   },
   {
-   "fieldname": "library_section_location",
-   "fieldtype": "Data",
-   "label": "Library Section location"
-  },
-  {
-   "fieldname": "library_section_description",
+   "fieldname": "description",
    "fieldtype": "Small Text",
-   "label": "Library Section Description"
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-30 18:35:37.883804",
+ "modified": "2024-07-03 11:32:49.041760",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Section",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
