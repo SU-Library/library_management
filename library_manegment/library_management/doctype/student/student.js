@@ -1,7 +1,7 @@
-// Copyright (c) 2024, Us and contributors
+// Copyright (c) 2024, us and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Genre", {
+// frappe.ui.form.on("Student", {
 // 	refresh(frm) {
 
 // 	},

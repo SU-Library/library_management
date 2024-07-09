@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{first_name} {last_name}",
+ "autoname": "field:name1",
  "creation": "2024-05-01 20:52:10.791959",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -21,7 +21,13 @@
   {
    "fieldname": "member_section",
    "fieldtype": "Section Break",
-   "label": "Library Member"
+   "label": "Student"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
   },
   {
    "fieldname": "joining_date",
@@ -36,7 +42,7 @@
   {
    "fieldname": "university_number",
    "fieldtype": "Int",
-   "label": "University Number"
+   "label": "University id Number "
   },
   {
    "fieldname": "list_of_borrowed_books",
@@ -81,11 +87,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-07 20:43:38.867353",
+ "modified": "2024-07-02 12:19:14.731487",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Member",
- "naming_rule": "Expression",
+ "name": "Student",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

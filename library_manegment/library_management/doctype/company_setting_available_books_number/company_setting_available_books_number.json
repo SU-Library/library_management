@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-30 12:05:02.343515",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_setting_available_books_no_section",
+  "role",
+  "max_books_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "\nEmployee\nStudent"
+  },
+  {
+   "fieldname": "max_books_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Max Books Number"
+  },
+  {
+   "fieldname": "company_setting_available_books_no_section",
+   "fieldtype": "Section Break",
+   "label": "Company Setting Available Books Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-02 12:42:20.430733",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Company Setting Available Books Number",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

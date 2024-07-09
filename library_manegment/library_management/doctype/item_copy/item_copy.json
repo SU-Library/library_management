@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "item_copy_section",
   "select_doctype",
   "reference_item",
   "original_barcode",
@@ -36,7 +37,7 @@
   {
    "fieldname": "copy_identifier",
    "fieldtype": "Data",
-   "label": "Copy Identifier",
+   "label": "Copy number Identifier",
    "read_only": 1
   },
   {
@@ -44,11 +45,16 @@
    "fieldtype": "Barcode",
    "label": "Copy Barcode",
    "read_only": 1
+  },
+  {
+   "fieldname": "item_copy_section",
+   "fieldtype": "Section Break",
+   "label": "Item Copy"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-30 13:46:25.951800",
+ "modified": "2024-07-01 19:42:51.028718",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Item Copy",

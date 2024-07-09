@@ -46,15 +46,15 @@
   {
    "fieldname": "e_book_section",
    "fieldtype": "Section Break",
-   "label": "E Book"
+   "label": "E Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-06 13:04:50.711487",
+ "modified": "2024-07-02 12:59:22.093953",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "E Book",
+ "name": "E Item",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

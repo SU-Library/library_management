@@ -48,7 +48,7 @@
   {
    "fieldname": "isbn",
    "fieldtype": "Data",
-   "label": "ISBN"
+   "label": "ISSN"
   },
   {
    "fieldname": "language",
@@ -75,7 +75,7 @@
    "fieldname": "e_book_file",
    "fieldtype": "Link",
    "label": "E Book",
-   "options": "E Book"
+   "options": "E Item"
   },
   {
    "fieldname": "book_section",
@@ -123,7 +123,7 @@
  "image_field": "book_cover",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-30 11:49:02.709175",
+ "modified": "2024-07-02 12:59:05.408957",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",

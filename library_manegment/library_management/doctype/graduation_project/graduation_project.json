@@ -61,7 +61,7 @@
    "fieldname": "e_graduation_project_file",
    "fieldtype": "Link",
    "label": "E Graduation Project File",
-   "options": "E Book"
+   "options": "E Item"
   },
   {
    "fieldname": "graduation_project_section",
@@ -86,7 +86,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-30 13:44:26.650192",
+ "modified": "2024-07-02 12:59:05.642444",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Graduation Project",
