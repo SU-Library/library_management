@@ -9,9 +9,12 @@
   "item_copy_section",
   "select_doctype",
   "reference_item",
+  "item_cover",
   "original_barcode",
   "copy_identifier",
-  "copy_barcode"
+  "copy_barcode",
+  "status",
+  "amended_from"
  ],
  "fields": [
   {
@@ -50,11 +53,32 @@
    "fieldname": "item_copy_section",
    "fieldtype": "Section Break",
    "label": "Item Copy"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nOn Loan\nLost"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Item Copy",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_cover",
+   "fieldtype": "Attach Image",
+   "label": "Item Cover"
   }
  ],
+ "image_field": "item_cover",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-01 19:42:51.028718",
+ "modified": "2024-07-19 19:42:34.583496",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Item Copy",

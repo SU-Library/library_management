@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class Testjusssttry(FrappeTestCase):
+class TestLibraryMember(FrappeTestCase):
 	pass

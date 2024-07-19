@@ -91,11 +91,12 @@ frappe.ui.form.on('Item Copy', {
                     filters: {
                         name: frm.doc.reference_item
                     },
-                    fieldname: 'barcode'
+                    fieldname: ['barcode', 'cover_image']  // Fetch cover_image field
                 },
                 callback: function(r) {
                     if (r.message) {
                         frm.set_value('original_barcode', r.message.barcode);
+                        frm.set_value('item_cover', r.message.cover_image);  // Set item cover
 
                         // Generate copy identifier
                         var name_parts = frm.doc.reference_item.split(' ');
@@ -129,3 +130,4 @@ frappe.ui.form.on('Item Copy', {
         }
     }
 });
+
