@@ -11,7 +11,7 @@
   "book_name",
   "barcode",
   "cover_image",
-  "author",
+  "authors",
   "publisher",
   "isbn",
   "language",
@@ -32,12 +32,6 @@
    "label": "Book Name",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "author",
-   "fieldtype": "Table",
-   "label": "Authors",
-   "options": "Book Authors"
   },
   {
    "fieldname": "publisher",
@@ -117,12 +111,18 @@
    "fieldname": "cover_image",
    "fieldtype": "Attach Image",
    "label": "Cover Image"
+  },
+  {
+   "fieldname": "authors",
+   "fieldtype": "Table",
+   "label": "Authors",
+   "options": "Book Authors"
   }
  ],
  "image_field": "cover_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-21 11:16:40.123491",
+ "modified": "2024-07-21 01:34:59.028035",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",
