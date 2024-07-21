@@ -8,7 +8,7 @@
  "field_order": [
   "magazine_section",
   "title",
-  "magazine_cover",
+  "cover_image",
   "publisher",
   "issn",
   "frequency_of_publication",
@@ -57,11 +57,6 @@
    "label": "Number of pages"
   },
   {
-   "fieldname": "magazine_cover",
-   "fieldtype": "Attach Image",
-   "label": "Magazine Cover"
-  },
-  {
    "fieldname": "electronic_settings_column",
    "fieldtype": "Column Break",
    "label": "Electronic Settings"
@@ -86,11 +81,18 @@
    "fieldname": "magazine_section",
    "fieldtype": "Section Break",
    "label": "Magazine"
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Attach Image",
+   "in_preview": 1,
+   "label": "Cover Image"
   }
  ],
+ "image_field": "cover_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-03 16:23:14.784012",
+ "modified": "2024-07-19 19:40:01.888732",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Magazine",
@@ -110,6 +112,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

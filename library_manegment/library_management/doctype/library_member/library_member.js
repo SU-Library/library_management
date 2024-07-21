@@ -1,8 +1,8 @@
 // Copyright (c) 2024, us and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("jussst try", {
-// 	refresh(frm) {
+frappe.ui.form.on('Library Member', {
+	// refresh: function(frm) {
 
-// 	},
-// });
+	// }
+});

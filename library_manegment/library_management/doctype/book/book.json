@@ -10,7 +10,7 @@
   "book_section",
   "book_name",
   "barcode",
-  "book_cover",
+  "cover_image",
   "author",
   "publisher",
   "isbn",
@@ -35,9 +35,9 @@
   },
   {
    "fieldname": "author",
-   "fieldtype": "Link",
-   "label": "Author",
-   "options": "Author"
+   "fieldtype": "Table",
+   "label": "Authors",
+   "options": "Book Authors"
   },
   {
    "fieldname": "publisher",
@@ -60,11 +60,6 @@
    "fieldname": "number_of_pages",
    "fieldtype": "Int",
    "label": "Number of Pages"
-  },
-  {
-   "fieldname": "book_cover",
-   "fieldtype": "Attach Image",
-   "label": "Book Cover"
   },
   {
    "fieldname": "electronic_settings_column",
@@ -116,14 +111,18 @@
    "fieldname": "barcode",
    "fieldtype": "Data",
    "label": "Barcode",
-   "read_only": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Attach Image",
+   "label": "Cover Image"
   }
  ],
- "image_field": "book_cover",
+ "image_field": "cover_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-02 12:59:05.408957",
+ "modified": "2024-07-21 11:16:40.123491",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",

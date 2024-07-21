@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "##########",
+ "autoname": "LMS.####",
  "creation": "2024-06-07 21:18:30.254004",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -20,7 +20,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Library Member",
-   "options": "Student",
+   "options": "Library Member",
    "reqd": 1
   },
   {
@@ -32,13 +32,15 @@
   },
   {
    "fieldname": "from_date",
-   "fieldtype": "Data",
-   "label": "From Date"
+   "fieldtype": "Date",
+   "label": "From Date",
+   "reqd": 1
   },
   {
    "fieldname": "to_date",
    "fieldtype": "Date",
-   "label": "To Date"
+   "label": "To Date",
+   "reqd": 1
   },
   {
    "default": "0",
@@ -65,7 +67,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-02 12:37:31.182822",
+ "modified": "2024-07-19 15:47:14.762286",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Membership",
@@ -93,6 +95,18 @@
    "read": 1,
    "report": 1,
    "role": "Librarian",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Staff",
    "share": 1,
    "write": 1
   }

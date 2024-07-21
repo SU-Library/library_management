@@ -17,6 +17,7 @@ class ItemCopy(Document):
             # Fetch the document of the reference item using doctype and item identifier
             reference_doc = frappe.get_doc(self.select_doctype, self.reference_item)
             self.original_barcode = reference_doc.barcode
+            self.item_cover = reference_doc.cover_image
 
         # Generate Copy Barcode based on Original Barcode and Copy Identifier
         if self.original_barcode and self.copy_identifier:
