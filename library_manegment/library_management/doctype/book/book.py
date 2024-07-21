@@ -35,24 +35,25 @@ import frappe
 from frappe.model.document import Document
 
 class Book(Document):
-    def autoname(self):
-        self.barcode = self.generate_barcode()
+    pass
+    # def autoname(self):
+    #     self.barcode = self.generate_barcode()
 
-    def generate_barcode(self):
-        if not self.book_name:
-            frappe.throw("Book Name must be set before generating the barcode.")
+    # def generate_barcode(self):
+    #     if not self.book_name:
+    #         frappe.throw("Book Name must be set before generating the barcode.")
         
-        # Generate barcode based on book_name
-        name_parts = self.book_name.split()
-        initials = ''.join([part[0].upper() for part in name_parts])
+    #     # Generate barcode based on book_name
+    #     name_parts = self.book_name.split()
+    #     initials = ''.join([part[0].upper() for part in name_parts])
 
-        # Example: Combine initials with timestamp
-        timestamp = frappe.utils.now_datetime()
-        timestamp_str = timestamp.strftime('%Y%m%d%H%M%S')
+    #     # Example: Combine initials with timestamp
+    #     timestamp = frappe.utils.now_datetime()
+    #     timestamp_str = timestamp.strftime('%Y%m%d%H%M%S')
 
-        return f"{initials}{timestamp_str}"
+    #     return f"{initials}{timestamp_str}"
 
-@frappe.whitelist()
-def generate_barcode(doc):
-    book = frappe.get_doc(json.loads(doc))
-    return book.generate_barcode()
+# @frappe.whitelist()
+# def generate_barcode(doc):
+#     book = frappe.get_doc(json.loads(doc))
+#     return book.generate_barcode()

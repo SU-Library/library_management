@@ -28,32 +28,32 @@
 */
 
 frappe.ui.form.on('Book', {
-    onload: function(frm) {
-        if (frm.doc.__islocal) {
-            frm.events.autoname(frm);
-        }
-    },
-    autoname: function(frm) {
-        if (!frm.doc.barcode && frm.doc.book_name) {
-            frm.set_value('barcode', frm.events.generate_barcode(frm));
-        }
-    },
-    generate_barcode: function(frm) {
-        if (!frm.doc.book_name) {
-            frappe.msgprint('Please set the Book Name.');
-            return '';
-        }
+    // onload: function(frm) {
+    //     if (frm.doc.__islocal) {
+    //         frm.events.autoname(frm);
+    //     }
+    // },
+    // autoname: function(frm) {
+    //     if (!frm.doc.barcode && frm.doc.book_name) {
+    //         frm.set_value('barcode', frm.events.generate_barcode(frm));
+    //     }
+    // },
+    // generate_barcode: function(frm) {
+    //     if (!frm.doc.book_name) {
+    //         frappe.msgprint('Please set the Book Name.');
+    //         return '';
+    //     }
         
-        var name_parts = frm.doc.book_name.split(' ');
-        var initials = '';
-        for (var i = 0; i < name_parts.length; i++) {
-            initials += name_parts[i][0].toUpperCase();
-        }
+    //     var name_parts = frm.doc.book_name.split(' ');
+    //     var initials = '';
+    //     for (var i = 0; i < name_parts.length; i++) {
+    //         initials += name_parts[i][0].toUpperCase();
+    //     }
 
-        var timestamp = frappe.datetime.now_datetime();
-        var timestamp_str = timestamp.replace(/[-: ]/g, '').slice(0, 14);  // Format YYYYMMDDHHMMSS
+    //     var timestamp = frappe.datetime.now_datetime();
+    //     var timestamp_str = timestamp.replace(/[-: ]/g, '').slice(0, 14);  // Format YYYYMMDDHHMMSS
         
-        var barcode = initials + timestamp_str;
-        return barcode;
-    }
+    //     var barcode = initials + timestamp_str;
+    //     return barcode;
+    // }
 });

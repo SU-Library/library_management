@@ -35,9 +35,9 @@
   },
   {
    "fieldname": "author",
-   "fieldtype": "Link",
-   "label": "Author",
-   "options": "Author"
+   "fieldtype": "Table",
+   "label": "Authors",
+   "options": "Book Authors"
   },
   {
    "fieldname": "publisher",
@@ -111,7 +111,6 @@
    "fieldname": "barcode",
    "fieldtype": "Data",
    "label": "Barcode",
-   "read_only": 1,
    "unique": 1
   },
   {
@@ -123,7 +122,7 @@
  "image_field": "cover_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-19 19:37:56.769099",
+ "modified": "2024-07-21 11:16:40.123491",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",
