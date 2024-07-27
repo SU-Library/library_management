@@ -1,7 +1,6 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:project_title",
  "creation": "2024-05-03 12:49:30.369195",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,27 +8,23 @@
  "field_order": [
   "graduation_project_section",
   "project_title",
-  "barcode",
-  "authors",
   "institution",
+  "borrowable",
+  "column_break_gewx",
   "year_of_competition",
-  "supervisors",
-  "keywords",
   "department",
-  "electronic_settings_column",
+  "section_break_eetz",
+  "supervisors",
+  "students_section",
+  "students",
+  "electronic_information_section",
   "e_graduation_project_file"
  ],
  "fields": [
   {
-   "fieldname": "authors",
-   "fieldtype": "Data",
-   "label": "Authors"
-  },
-  {
    "fieldname": "institution",
-   "fieldtype": "Select",
-   "label": "Institution",
-   "options": "Sana'a University\nAl-Saeedah University"
+   "fieldtype": "Data",
+   "label": "Institution"
   },
   {
    "fieldname": "year_of_competition",
@@ -38,24 +33,14 @@
   },
   {
    "fieldname": "supervisors",
-   "fieldtype": "Data",
-   "label": "Supervisors"
-  },
-  {
-   "fieldname": "keywords",
-   "fieldtype": "Data",
-   "label": "Keywords"
+   "fieldtype": "Table",
+   "label": "Supervisors",
+   "options": "Graduation Project Supervisors"
   },
   {
    "fieldname": "department",
-   "fieldtype": "Select",
-   "label": "Department",
-   "options": "Computer Science & Information Technology"
-  },
-  {
-   "fieldname": "electronic_settings_column",
-   "fieldtype": "Column Break",
-   "label": "Electronic Settings"
+   "fieldtype": "Data",
+   "label": "Department"
   },
   {
    "fieldname": "e_graduation_project_file",
@@ -69,28 +54,51 @@
    "label": "Graduation Project"
   },
   {
-   "fieldname": "barcode",
-   "fieldtype": "Data",
-   "label": "Barcode",
-   "read_only": 1,
-   "unique": 1
-  },
-  {
    "fieldname": "project_title",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Project Title",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "students",
+   "fieldtype": "Table",
+   "label": "Students",
+   "options": "Graduation Project Students"
+  },
+  {
+   "fieldname": "students_section",
+   "fieldtype": "Section Break",
+   "label": "Students"
+  },
+  {
+   "fieldname": "electronic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Electronic Information"
+  },
+  {
+   "fieldname": "section_break_eetz",
+   "fieldtype": "Section Break",
+   "label": "Supervisors"
+  },
+  {
+   "fieldname": "column_break_gewx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "borrowable",
+   "fieldtype": "Check",
+   "label": "Borrowable"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-02 12:59:05.642444",
+ "modified": "2024-07-28 02:17:10.691229",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Graduation Project",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

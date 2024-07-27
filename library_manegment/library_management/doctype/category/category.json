@@ -1,15 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:genre_name",
+ "autoname": "field:category_name",
  "creation": "2024-05-03 14:54:36.227070",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "genre_details_section",
-  "genre_id",
-  "genre_name",
-  "description"
+  "category_name",
+  "description",
+  "classification"
  ],
  "fields": [
   {
@@ -18,27 +18,28 @@
    "label": "Category Details"
   },
   {
-   "fieldname": "genre_id",
-   "fieldtype": "Int",
-   "label": "Category ID"
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
   },
   {
-   "fieldname": "genre_name",
+   "fieldname": "classification",
+   "fieldtype": "Link",
+   "label": "Classification",
+   "options": "Classification"
+  },
+  {
+   "fieldname": "category_name",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Category Name",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Text",
-   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-14 07:30:46.982607",
+ "modified": "2024-07-28 01:31:12.039835",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Category",

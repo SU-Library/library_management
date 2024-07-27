@@ -1,15 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:Shelf {title} - {area}",
  "creation": "2024-05-18 20:55:02.169849",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "shelf_section",
-  "shelf_name",
-  "shelf_capacity",
-  "section",
-  "shelf_current_occupancy"
+  "title",
+  "area"
  ],
  "fields": [
   {
@@ -18,33 +17,24 @@
    "label": "Shelf"
   },
   {
-   "fieldname": "shelf_name",
+   "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Shelf Name"
+   "label": "Title"
   },
   {
-   "fieldname": "shelf_capacity",
-   "fieldtype": "Data",
-   "label": "Shelf Capacity"
-  },
-  {
-   "fieldname": "section",
+   "fieldname": "area",
    "fieldtype": "Link",
-   "label": "Section",
-   "options": "Library Section"
-  },
-  {
-   "fieldname": "shelf_current_occupancy",
-   "fieldtype": "Int",
-   "label": "Shelf Current Occupancy"
+   "label": "Area",
+   "options": "Area"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-30 18:57:44.197474",
+ "modified": "2024-07-28 02:49:07.762514",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Shelf",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

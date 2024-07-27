@@ -7,11 +7,13 @@
  "field_order": [
   "supply_order_section",
   "order_date",
-  "order_item",
-  "quantity",
   "statues",
-  "received_date",
-  "remarks"
+  "supplier",
+  "items_section",
+  "order_item",
+  "section_break_obvj",
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
@@ -26,14 +28,9 @@
   },
   {
    "fieldname": "order_item",
-   "fieldtype": "Link",
+   "fieldtype": "Table",
    "label": "Order Item",
-   "options": "Storage Inventory"
-  },
-  {
-   "fieldname": "quantity",
-   "fieldtype": "Int",
-   "label": "Quantity"
+   "options": "Supply Order Items"
   },
   {
    "fieldname": "statues",
@@ -42,19 +39,40 @@
    "options": "Draft\nThe Order Completed\nThe Receipt Completed\nCanceled"
   },
   {
-   "fieldname": "received_date",
-   "fieldtype": "Date",
-   "label": "Received Date"
-  },
-  {
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "section_break_obvj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Requester",
+   "options": "User"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Supply Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-05-19 00:04:06.527036",
+ "modified": "2024-07-28 02:24:48.831857",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Supply Order",

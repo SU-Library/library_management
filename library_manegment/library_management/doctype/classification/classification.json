@@ -1,14 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:classification_name",
  "creation": "2024-06-05 18:27:10.466043",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "classification_section",
-  "classification_id",
   "classification_name",
-  "parent_genre"
+  "description"
  ],
  "fields": [
   {
@@ -17,28 +17,24 @@
    "label": "Classification "
   },
   {
-   "fieldname": "classification_id",
-   "fieldtype": "Int",
-   "label": "Classification ID"
-  },
-  {
    "fieldname": "classification_name",
    "fieldtype": "Data",
-   "label": "Classification Name"
+   "label": "Classification Name",
+   "unique": 1
   },
   {
-   "fieldname": "parent_genre",
-   "fieldtype": "Link",
-   "label": "Parent Category",
-   "options": "Category"
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-05 18:36:08.977120",
+ "modified": "2024-07-28 01:30:34.626754",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Classification",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

@@ -8,21 +8,26 @@
  "engine": "InnoDB",
  "field_order": [
   "book_section",
+  "company",
   "book_name",
-  "barcode",
-  "cover_image",
-  "authors",
-  "publisher",
-  "isbn",
-  "language",
-  "category",
   "classification",
+  "category",
+  "cover_image",
+  "column_break_cska",
+  "language",
   "number_of_pages",
   "published",
-  "location",
-  "electronic_settings_column",
-  "e_book_file",
-  "audio_book"
+  "borrowable",
+  "stock_data_section",
+  "barcode",
+  "authors_data_section",
+  "authors",
+  "publishing_data_section",
+  "publisher",
+  "edition",
+  "column_break_qoqf",
+  "publishing_date",
+  "isbn"
  ],
  "fields": [
   {
@@ -42,7 +47,7 @@
   {
    "fieldname": "isbn",
    "fieldtype": "Data",
-   "label": "ISSN"
+   "label": "ISBN"
   },
   {
    "fieldname": "language",
@@ -56,38 +61,9 @@
    "label": "Number of Pages"
   },
   {
-   "fieldname": "electronic_settings_column",
-   "fieldtype": "Column Break",
-   "label": "Electronic Settings"
-  },
-  {
-   "fieldname": "e_book_file",
-   "fieldtype": "Link",
-   "label": "E Book",
-   "options": "E Item"
-  },
-  {
    "fieldname": "book_section",
    "fieldtype": "Section Break",
    "label": "Book"
-  },
-  {
-   "fieldname": "audio_book",
-   "fieldtype": "Link",
-   "label": "Audio Book ",
-   "options": "Audio Item"
-  },
-  {
-   "default": "0",
-   "fieldname": "published",
-   "fieldtype": "Check",
-   "label": "Published"
-  },
-  {
-   "fieldname": "location",
-   "fieldtype": "Link",
-   "label": "Location",
-   "options": "Shelf"
   },
   {
    "fieldname": "classification",
@@ -103,9 +79,8 @@
   },
   {
    "fieldname": "barcode",
-   "fieldtype": "Data",
-   "label": "Barcode",
-   "unique": 1
+   "fieldtype": "Barcode",
+   "label": "Barcode"
   },
   {
    "fieldname": "cover_image",
@@ -117,12 +92,63 @@
    "fieldtype": "Table",
    "label": "Authors",
    "options": "Book Authors"
+  },
+  {
+   "fieldname": "edition",
+   "fieldtype": "Link",
+   "label": "Edition",
+   "options": "Publisher"
+  },
+  {
+   "fieldname": "publishing_data_section",
+   "fieldtype": "Section Break",
+   "label": "Publishing Data"
+  },
+  {
+   "fieldname": "publishing_date",
+   "fieldtype": "Date",
+   "label": "Publishing Date"
+  },
+  {
+   "fieldname": "authors_data_section",
+   "fieldtype": "Section Break",
+   "label": "Authors Data"
+  },
+  {
+   "fieldname": "stock_data_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "column_break_cska",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qoqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "borrowable",
+   "fieldtype": "Check",
+   "label": "Borrowable"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
   }
  ],
  "image_field": "cover_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-21 01:34:59.028035",
+ "modified": "2024-07-28 02:52:40.490847",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",

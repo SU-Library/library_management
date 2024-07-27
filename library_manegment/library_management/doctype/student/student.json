@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:name1",
+ "autoname": "field:student_id",
  "creation": "2024-05-01 20:52:10.791959",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,21 +13,13 @@
   "full_name",
   "joining_date",
   "phone",
-  "university_number",
-  "list_of_borrowed_books",
-  "member_ratings"
+  "student_id"
  ],
  "fields": [
   {
    "fieldname": "member_section",
    "fieldtype": "Section Break",
    "label": "Student"
-  },
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name",
-   "unique": 1
   },
   {
    "fieldname": "joining_date",
@@ -38,22 +30,6 @@
    "fieldname": "phone",
    "fieldtype": "Phone",
    "label": "Phone"
-  },
-  {
-   "fieldname": "university_number",
-   "fieldtype": "Int",
-   "label": "University id Number "
-  },
-  {
-   "fieldname": "list_of_borrowed_books",
-   "fieldtype": "Link",
-   "label": "List of Borrowed Books",
-   "options": "Item Borrowing"
-  },
-  {
-   "fieldname": "member_ratings",
-   "fieldtype": "Rating",
-   "label": "Member Ratings"
   },
   {
    "fieldname": "last_name",
@@ -83,11 +59,17 @@
    "in_list_view": 1,
    "label": "Middle Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Data",
+   "label": "Student ID",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-02 12:19:14.731487",
+ "modified": "2024-07-28 01:57:13.612783",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Student",

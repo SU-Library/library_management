@@ -1,49 +1,42 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-05-01 20:52:34.225048",
+ "autoname": "format:Rack {title} - {shelf}",
+ "creation": "2024-07-28 02:43:15.769919",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "library_staff_section",
-  "name1",
-  "phone",
-  "address",
-  "email"
+  "title",
+  "shelf",
+  "area"
  ],
  "fields": [
   {
-   "fieldname": "library_staff_section",
-   "fieldtype": "Section Break",
-   "label": "Staff"
-  },
-  {
-   "fieldname": "name1",
+   "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Name"
+   "label": "Title"
   },
   {
-   "fieldname": "phone",
-   "fieldtype": "Phone",
-   "label": "Phone"
+   "fieldname": "shelf",
+   "fieldtype": "Link",
+   "label": "Shelf",
+   "options": "Shelf"
   },
   {
-   "fieldname": "address",
-   "fieldtype": "Data",
-   "label": "Address"
-  },
-  {
-   "fieldname": "email",
-   "fieldtype": "Data",
-   "label": "Email"
+   "fetch_from": "shelf.area",
+   "fieldname": "area",
+   "fieldtype": "Link",
+   "label": "Area",
+   "options": "Area"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-14 07:09:05.604746",
+ "modified": "2024-07-28 02:47:18.166498",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Staff",
+ "name": "Rack",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -59,6 +52,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

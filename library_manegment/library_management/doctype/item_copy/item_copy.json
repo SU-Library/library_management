@@ -7,21 +7,27 @@
  "engine": "InnoDB",
  "field_order": [
   "item_copy_section",
+  "company",
   "select_doctype",
   "reference_item",
-  "item_cover",
-  "original_barcode",
   "copy_identifier",
   "copy_barcode",
   "status",
-  "amended_from"
+  "borrowable",
+  "section_break_yueo",
+  "location_column",
+  "rack",
+  "column_break_fssp",
+  "shelf",
+  "column_break_ebzq",
+  "area"
  ],
  "fields": [
   {
    "fieldname": "select_doctype",
    "fieldtype": "Select",
    "label": "Select DocType",
-   "options": "Book\nMagazine\nGraduation Project"
+   "options": "Book\nGraduation Project"
   },
   {
    "fieldname": "reference_item",
@@ -30,17 +36,9 @@
    "options": "select_doctype"
   },
   {
-   "fieldname": "original_barcode",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Original Barcode",
-   "read_only": 1,
-   "reqd": 1
-  },
-  {
    "fieldname": "copy_identifier",
    "fieldtype": "Data",
-   "label": "Copy number Identifier",
+   "label": "Copy Identifier",
    "read_only": 1
   },
   {
@@ -61,24 +59,58 @@
    "options": "Available\nOn Loan\nLost"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Item Copy",
-   "print_hide": 1,
-   "read_only": 1
+   "default": "0",
+   "fieldname": "borrowable",
+   "fieldtype": "Check",
+   "label": "Borrowable"
   },
   {
-   "fieldname": "item_cover",
-   "fieldtype": "Attach Image",
-   "label": "Item Cover"
+   "fieldname": "section_break_yueo",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "location_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rack",
+   "fieldtype": "Link",
+   "label": "Rack",
+   "options": "Rack"
+  },
+  {
+   "fetch_from": "rack.shelf",
+   "fieldname": "shelf",
+   "fieldtype": "Link",
+   "label": "Shelf",
+   "options": "Shelf"
+  },
+  {
+   "fetch_from": "rack.area",
+   "fieldname": "area",
+   "fieldtype": "Link",
+   "label": "Area",
+   "options": "Area"
+  },
+  {
+   "fieldname": "column_break_fssp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ebzq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
   }
  ],
- "image_field": "item_cover",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-19 19:42:34.583496",
+ "modified": "2024-07-28 02:52:16.329166",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Item Copy",

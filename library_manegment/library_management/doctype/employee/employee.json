@@ -1,49 +1,25 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-05-01 20:52:34.225048",
+ "creation": "2024-07-28 01:58:44.324581",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "library_staff_section",
-  "name1",
-  "phone",
-  "address",
-  "email"
+  "name1"
  ],
  "fields": [
   {
-   "fieldname": "library_staff_section",
-   "fieldtype": "Section Break",
-   "label": "Employee"
-  },
-  {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Name"
-  },
-  {
-   "fieldname": "phone",
-   "fieldtype": "Phone",
-   "label": "Phone"
-  },
-  {
-   "fieldname": "address",
-   "fieldtype": "Data",
-   "label": "Address"
-  },
-  {
-   "fieldname": "email",
-   "fieldtype": "Data",
-   "label": "Email"
+   "label": "name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-02 11:22:39.155588",
+ "modified": "2024-07-28 01:58:58.701593",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Library Staff",
+ "name": "Employee",
  "owner": "Administrator",
  "permissions": [
   {

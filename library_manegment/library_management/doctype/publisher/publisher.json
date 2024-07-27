@@ -8,7 +8,9 @@
  "field_order": [
   "publisher_section",
   "name1",
-  "location"
+  "location",
+  "description",
+  "logo"
  ],
  "fields": [
   {
@@ -26,11 +28,21 @@
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "location"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-01 20:48:11.747809",
+ "modified": "2024-07-28 01:26:26.976160",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Publisher",
