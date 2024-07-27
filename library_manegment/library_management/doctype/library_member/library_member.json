@@ -8,6 +8,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "library_member_section",
   "first_name",
   "last_name",
   "full_name",
@@ -45,11 +46,16 @@
    "fieldtype": "Data",
    "label": "Phone",
    "options": "Phone"
+  },
+  {
+   "fieldname": "library_member_section",
+   "fieldtype": "Section Break",
+   "label": "Library Member"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-19 14:01:02.050827",
+ "modified": "2024-07-23 18:54:24.679086",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",
