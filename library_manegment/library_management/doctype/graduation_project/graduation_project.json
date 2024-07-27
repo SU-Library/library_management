@@ -48,9 +48,9 @@
   },
   {
    "fieldname": "department",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Department",
-   "options": "Computer Science & Information Technology"
+   "options": "Department"
   },
   {
    "fieldname": "electronic_settings_column",
@@ -86,7 +86,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-02 12:59:05.642444",
+ "modified": "2024-07-23 18:21:56.134120",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Graduation Project",

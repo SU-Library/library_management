@@ -1,41 +1,37 @@
 {
- "_comments": "[{\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"a2ff4365aa\"}]",
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:name1",
- "creation": "2024-07-03 11:28:07.928450",
+ "creation": "2024-07-23 18:12:06.898269",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "library_section_section",
   "name1",
-  "description"
+  "desciption"
  ],
  "fields": [
   {
    "fieldname": "library_section_section",
    "fieldtype": "Section Break",
-   "label": "library section"
+   "label": "Library Section"
   },
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Name",
-   "unique": 1
+   "label": "Name"
   },
   {
-   "fieldname": "description",
+   "fieldname": "desciption",
    "fieldtype": "Small Text",
-   "label": "Description"
+   "label": "Desciption"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-03 11:32:49.041760",
+ "modified": "2024-07-23 18:16:53.901945",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Section",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

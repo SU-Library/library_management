@@ -32,13 +32,13 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text",
+   "fieldtype": "Small Text",
    "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-14 07:30:46.982607",
+ "modified": "2024-07-23 18:49:29.587456",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Category",

@@ -7,6 +7,7 @@
  "field_order": [
   "shelf_section",
   "shelf_name",
+  "shelf_number",
   "shelf_capacity",
   "section",
   "shelf_current_occupancy"
@@ -37,11 +38,16 @@
    "fieldname": "shelf_current_occupancy",
    "fieldtype": "Int",
    "label": "Shelf Current Occupancy"
+  },
+  {
+   "fieldname": "shelf_number",
+   "fieldtype": "Int",
+   "label": "Shelf Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-30 18:57:44.197474",
+ "modified": "2024-07-23 19:20:53.996510",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Shelf",
