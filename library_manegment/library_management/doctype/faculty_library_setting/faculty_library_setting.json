@@ -9,6 +9,7 @@
   "faculty_library_setting_section",
   "company",
   "max_delay_period",
+  "delay_fine",
   "available_books_no"
  ],
  "fields": [
@@ -34,11 +35,16 @@
    "fieldname": "faculty_library_setting_section",
    "fieldtype": "Section Break",
    "label": "Faculty Library Setting"
+  },
+  {
+   "fieldname": "delay_fine",
+   "fieldtype": "Currency",
+   "label": "Delay Fine"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-02 12:39:58.064371",
+ "modified": "2024-08-02 03:14:08.743179",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Faculty Library Setting",

@@ -1,16 +1,16 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{item_borrowing}",
  "creation": "2024-05-05 22:58:39.573269",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "damage_section",
+  "company",
   "item_borrowing",
-  "description_of_the_damage",
-  "fine_amount",
-  "fine_status"
+  "role",
+  "person",
+  "description_of_the_damage"
  ],
  "fields": [
   {
@@ -25,29 +25,38 @@
    "label": "Description of the damage"
   },
   {
-   "fieldname": "fine_amount",
-   "fieldtype": "Int",
-   "label": "Fine Amount"
-  },
-  {
-   "fieldname": "fine_status",
-   "fieldtype": "Select",
-   "label": "Fine Status",
-   "options": "unpaid\npaid"
-  },
-  {
    "fieldname": "damage_section",
    "fieldtype": "Section Break",
    "label": "Damage"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fetch_from": "item_borrowing.role",
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "label": "Role",
+   "options": "\nEmployee\nStudent"
+  },
+  {
+   "fetch_from": "item_borrowing.person",
+   "fieldname": "person",
+   "fieldtype": "Dynamic Link",
+   "label": "Person",
+   "options": "role"
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-06 12:59:26.994997",
+ "modified": "2024-08-02 04:03:08.681002",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Damage",
- "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

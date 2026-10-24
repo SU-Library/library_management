@@ -28,6 +28,12 @@
 */
 
 frappe.ui.form.on('Book', {
+    refresh : function(frm){
+        
+    },
+    classification : function (frm){
+        frm.set_value ("category", '');
+    }
     // onload: function(frm) {
     //     if (frm.doc.__islocal) {
     //         frm.events.autoname(frm);

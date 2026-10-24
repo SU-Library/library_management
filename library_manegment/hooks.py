@@ -133,13 +133,13 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"library_manegment.tasks.all"
 # 	],
-# 	"daily": [
-# 		"library_manegment.tasks.daily"
-# 	],
+	"daily": [
+		"library_manegment.b_schedular.check_overdue_borrowings"
+	],
 # 	"hourly": [
 # 		"library_manegment.tasks.hourly"
 # 	],
@@ -149,7 +149,7 @@ app_license = "mit"
 # 	"monthly": [
 # 		"library_manegment.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------

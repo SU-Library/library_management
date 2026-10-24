@@ -1,18 +1,22 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{book_copy}",
  "creation": "2024-05-01 20:46:16.941927",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "item_borrowing_section",
-  "book_copy",
+  "company",
+  "role",
+  "person",
+  "type",
+  "item",
+  "item_copy",
   "date_of_borrowing",
   "expected_retrieval_date",
   "actual_retrieval_date",
   "status",
-  "user"
+  "amended_from"
  ],
  "fields": [
   {
@@ -26,41 +30,80 @@
    "label": "Date of Borrowing"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "expected_retrieval_date",
    "fieldtype": "Date",
-   "label": "Expected retrieval date"
+   "label": "Expected retrieval date",
+   "read_only": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "actual_retrieval_date",
    "fieldtype": "Date",
-   "label": "Actual retrieval date"
+   "label": "Actual retrieval date",
+   "read_only": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Available\nNot Available"
+   "options": "\nIn Progress\nReturned\nOverdue\nDamaged"
   },
   {
-   "fieldname": "book_copy",
-   "fieldtype": "Link",
-   "label": "Book Copy",
-   "options": "Item Coppppy"
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Book\nGraduation Project"
   },
   {
-   "fieldname": "user",
+   "fieldname": "item",
+   "fieldtype": "Dynamic Link",
+   "label": "Item",
+   "options": "type"
+  },
+  {
+   "fieldname": "amended_from",
    "fieldtype": "Link",
-   "label": "User",
-   "options": "Library Membership"
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Item Borrowing",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "label": "Role",
+   "options": "\nEmployee\nStudent"
+  },
+  {
+   "fieldname": "person",
+   "fieldtype": "Dynamic Link",
+   "label": "Person",
+   "options": "role"
+  },
+  {
+   "fieldname": "item_copy",
+   "fieldtype": "Link",
+   "label": "Item Copy",
+   "options": "Item Copy"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-07-02 11:27:02.925178",
+ "modified": "2024-08-02 03:31:32.403878",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Item Borrowing",
- "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -77,13 +120,16 @@
   },
   {
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Library Staff",
+   "select": 1,
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

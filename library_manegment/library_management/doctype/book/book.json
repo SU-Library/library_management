@@ -72,6 +72,7 @@
    "options": "Classification"
   },
   {
+   "depends_on": "eval: doc.classification != null",
    "fieldname": "category",
    "fieldtype": "Link",
    "label": "Category",
@@ -95,9 +96,8 @@
   },
   {
    "fieldname": "edition",
-   "fieldtype": "Link",
-   "label": "Edition",
-   "options": "Publisher"
+   "fieldtype": "Data",
+   "label": "Edition"
   },
   {
    "fieldname": "publishing_data_section",
@@ -148,7 +148,7 @@
  "image_field": "cover_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-28 02:52:40.490847",
+ "modified": "2024-07-31 17:43:31.792821",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Book",

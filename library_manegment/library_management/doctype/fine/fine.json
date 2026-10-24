@@ -1,14 +1,17 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{item_borrowing}",
  "creation": "2024-05-01 20:53:39.496599",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "fine_section",
+  "company",
   "item_borrowing",
-  "event_date",
+  "role",
+  "person",
+  "fine_type",
+  "damage",
   "fine_amount",
   "fine_status"
  ],
@@ -19,16 +22,12 @@
    "label": "Fine"
   },
   {
-   "fieldname": "event_date",
-   "fieldtype": "Date",
-   "label": "Event Date"
-  },
-  {
    "fieldname": "fine_amount",
-   "fieldtype": "Int",
+   "fieldtype": "Currency",
    "label": "Fine Amount"
   },
   {
+   "default": "unpaid",
    "fieldname": "fine_status",
    "fieldtype": "Select",
    "label": "Fine Status",
@@ -39,15 +38,48 @@
    "fieldtype": "Link",
    "label": "Item Borrowing",
    "options": "Item Borrowing"
+  },
+  {
+   "fieldname": "fine_type",
+   "fieldtype": "Select",
+   "label": "Fine Type",
+   "options": "\nDelay\nDamage"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "depends_on": "eval: doc.fine_type == \"Damage\"",
+   "fieldname": "damage",
+   "fieldtype": "Link",
+   "label": "Damage",
+   "options": "Damage"
+  },
+  {
+   "fetch_from": "item_borrowing.role",
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "label": "Role",
+   "options": "\nEmployee\nStudent"
+  },
+  {
+   "fetch_from": "item_borrowing.person",
+   "fieldname": "person",
+   "fieldtype": "Dynamic Link",
+   "label": "Person",
+   "options": "role"
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-06 13:00:05.454187",
+ "modified": "2024-08-02 04:03:00.445876",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Fine",
- "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

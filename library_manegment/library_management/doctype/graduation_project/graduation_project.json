@@ -44,9 +44,8 @@
   },
   {
    "fieldname": "e_graduation_project_file",
-   "fieldtype": "Link",
-   "label": "E Graduation Project File",
-   "options": "E Item"
+   "fieldtype": "Attach",
+   "label": "E Graduation Project File"
   },
   {
    "fieldname": "graduation_project_section",
@@ -95,7 +94,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-28 02:17:10.691229",
+ "modified": "2024-07-31 17:04:01.463342",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Graduation Project",
