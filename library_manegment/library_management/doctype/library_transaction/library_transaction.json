@@ -8,6 +8,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "library_transaction_section",
   "select_doctype",
   "reference_item",
   "type",
@@ -65,12 +66,17 @@
    "fieldname": "copy_number_identifier",
    "fieldtype": "Select",
    "label": "Copy Number Identifier"
+  },
+  {
+   "fieldname": "library_transaction_section",
+   "fieldtype": "Section Break",
+   "label": "Library Transaction"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-19 15:22:38.344515",
+ "modified": "2024-07-23 18:53:44.471575",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Transaction",

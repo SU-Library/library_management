@@ -28,8 +28,11 @@ class GraduationProject(Document):
         return f"{initials}{timestamp}"
 
 '''
+import json
+
 import frappe
 from frappe.model.document import Document
+
 
 class GraduationProject(Document):
     def autoname(self):

@@ -3,6 +3,13 @@
 
 # /your_custom_app/your_custom_app/doctype/copy_item/copy_item.py
 
+"""Item Copy: one physical copy of a Book or Graduation Project.
+
+On every save the copy barcode is rebuilt as
+    <barcode of the reference item>-<copy identifier>
+Status values: Available / Unavailable (out on loan) / Damaged.
+"""
+
 import frappe
 from frappe.model.document import Document
 from frappe import _

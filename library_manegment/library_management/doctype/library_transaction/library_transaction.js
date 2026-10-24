@@ -26,7 +26,7 @@ frappe.ui.form.on('Library Transaction', {
     },
     fetch_copy_identifiers: function(frm) {
         if (frm.doc.reference_item && frm.doc.select_doctype && frm.doc.type) {
-            let status_filter = frm.doc.type === 'Issue' ? 'Available' : 'On Loan';
+            let status_filter = frm.doc.type === 'Issue' ? 'Available' : 'Unavailable';  // Unavailable = out on loan
             
             frappe.call({
                 method: 'frappe.client.get_list',
