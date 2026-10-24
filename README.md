@@ -22,10 +22,6 @@ The system leverages the [Frappe framework](https://frappeframework.com/), known
 * Frontend: JavaScript (Frappe forms) and Vue (public catalogue, separate repository `library_vue`)
 * Database: [MariaDB](https://mariadb.org/)
 
-## Required Apps
-
-The Library Management System does not require any additional Frappe apps. It depends only on the Frappe framework.
-
 ## License
 
 This system is licensed under the MIT License. See [LICENSE](license.txt) for more information.
