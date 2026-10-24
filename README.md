@@ -1,4 +1,4 @@
-[Readme باللغة العربية](README.ar.md)
+[Readme باللغة العربية](README_ARABIC.md)
 
 # Library Management System
 
